@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBEFCA7B-6C20-4A08-96A6-50E3644B885C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DeptManagement</RootNamespace>
+    <AssemblyName>DeptManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="debtManagementDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>debtManagementDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="debtManagementDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>debtManagementDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="debtManagementDbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>debtManagementDbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="debtManagementDbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>debtManagementDbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="debtManagementDbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>debtManagementDbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="debtManagementDbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>debtManagementDbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.Designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newDebt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newDebt.Designer.cs">
+      <DependentUpon>newDebt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewIndividual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewIndividual.Designer.cs">
+      <DependentUpon>NewIndividual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettleBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettleBalanceForm.Designer.cs">
+      <DependentUpon>SettleBalanceForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newDebt.resx">
+      <DependentUpon>newDebt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewIndividual.resx">
+      <DependentUpon>NewIndividual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettleBalanceForm.resx">
+      <DependentUpon>SettleBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="debtManagementDbDataSet.xsc">
+      <DependentUpon>debtManagementDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>debtManagementDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="debtManagementDbDataSet.xss">
+      <DependentUpon>debtManagementDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet1.xsc">
+      <DependentUpon>debtManagementDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>debtManagementDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="debtManagementDbDataSet1.xss">
+      <DependentUpon>debtManagementDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet2.xsc">
+      <DependentUpon>debtManagementDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>debtManagementDbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="debtManagementDbDataSet2.xss">
+      <DependentUpon>debtManagementDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet3.xsc">
+      <DependentUpon>debtManagementDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>debtManagementDbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="debtManagementDbDataSet3.xss">
+      <DependentUpon>debtManagementDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet4.xsc">
+      <DependentUpon>debtManagementDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>debtManagementDbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="debtManagementDbDataSet4.xss">
+      <DependentUpon>debtManagementDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet5.xsc">
+      <DependentUpon>debtManagementDbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="debtManagementDbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>debtManagementDbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="debtManagementDbDataSet5.xss">
+      <DependentUpon>debtManagementDbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-close-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-enlarge-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-close-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-maximize-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-dashboard-layout-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-in-inventory-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-in-inventory-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-user-group-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-transaction-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-add-new-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\earth-3087437_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-reset-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-reset-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-verified-account-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\se.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-profit-report-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\icons8-update-left-rotation-24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
